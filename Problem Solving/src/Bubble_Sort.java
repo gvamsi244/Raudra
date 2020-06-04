@@ -1,9 +1,13 @@
-import java.util.Arrays;
-
 /**
  * @author Vamsi Krishna Govada on 6/4/2020.
  * @project Raudra
  */
+
+
+// Bubble Sort
+
+import java.util.Arrays;
+
 public class Bubble_Sort {
     public static int[] sortArray(int[] nums) {
         int len = nums.length, swapped = 0;
