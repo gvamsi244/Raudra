@@ -16,11 +16,7 @@ class MyQueue{
          arr= new int[size];
     }
 
-
     static void enqueue(int element){
-//        start = start % size;
-        System.out.println("Size is : "+arr.length);
-//        end = end%size;
         if(start == -1){
             start =0;end=0;
             arr[end] = element;
@@ -37,8 +33,6 @@ class MyQueue{
     }
 
     static void dequeue(){
-//        start = start % size;
-//        end = end%size;
         if(start == -1)
             System.out.println("Queue is Empty");
         else{
