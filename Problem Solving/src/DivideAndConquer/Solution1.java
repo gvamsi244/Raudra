@@ -20,11 +20,14 @@ public class Solution1 {
             if (count == freq)
                 return arr[i];
         }
-        return arr[len - 1];
+        return -1;
     }
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 4, 4, 4};
         int result = isMajority(arr);
-        System.out.println("Majority element is " + result);
+        if(result==-1)
+            System.out.println("Majority element is not Present");
+        else
+            System.out.println("Majority element is " + result);
     }
 }
