@@ -1,7 +1,5 @@
 package Arrays;
 
-import java.util.*;
-
 /**
  * @author Vamsi Krishna Govada on 8/14/2020.
  * @project Raudra
@@ -24,7 +22,6 @@ public class Solution4 {
             }
         }
         return max_val;
-
     }
 
     public static void main(String[] args) {
