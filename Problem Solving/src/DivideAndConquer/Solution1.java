@@ -6,6 +6,7 @@ package DivideAndConquer;
  */
 
 // Finding a majority element using Linear search
+
 public class Solution1 {
     private static int isMajority(int[] arr) {
         int len = arr.length;
