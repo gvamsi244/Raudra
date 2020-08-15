@@ -6,15 +6,23 @@ package Trees;
  */
 
 class Node {
-    int data;
+    int val;
     Node left, right;
 
     public Node(int item) {
-        data = item;
+        val = item;
         left = right = null;
     }
 }
 
+
 class BinaryTree {
     Node root;
+    Node root1;
+    Node root2;
+    Node root3;
+
+    Node temp;
+    Node temp1;
+    Node temp2;
 }
