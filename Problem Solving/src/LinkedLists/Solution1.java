@@ -7,37 +7,40 @@ package LinkedLists;
 
 // Implementation of reverse a linked list
 
-// Definition for singly-linked list.
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
 class Solution1 {
-
-    public ListNode reverseList(ListNode head) {
+    public static Node reverseList(Node head) {
         return reverse(null, head);
     }
 
-    public ListNode reverse(ListNode tail, ListNode head) {
+    public static Node reverse(Node tail, Node head) {
         if (head != null) {
-            ListNode temp = head.next;
+            Node temp = head.next;
             head.next = tail;
             tail = head;
             return reverse(tail, temp);
         }
         return tail;
+    }
+
+    static void printList(Node node) {
+        while (node != null) {
+            System.out.print(node.data + " ");
+            node = node.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+        list.head = new Node(85);
+        list.head.next = new Node(15);
+        list.head.next.next = new Node(4);
+        list.head.next.next.next = new Node(20);
+        Node head = list.head;
+        System.out.println("Given Linked list");
+        printList(head);
+        head = reverseList(head);
+        System.out.println("");
+        System.out.println("Reversed linked list ");
+        printList(head);
     }
 }
